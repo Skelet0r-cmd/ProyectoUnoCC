@@ -22,7 +22,7 @@ public class Main {
         lista.add(new Gasto("Gas", 20000));
 
         double resultado = lista.stream()
-                .mapToDouble(gasto -> gasto.getValor() * 1.21)
+                .mapToDouble(gasto -> gasto.getValor() * 1.19)
                 .filter(gasto -> gasto < 20000)
                 .sum();
 
